@@ -10,8 +10,10 @@ import TextField from '@material-ui/core/TextField';
 
 
 
+
 function App() {
     return (
+
         <>
             <header/>
 
@@ -20,8 +22,8 @@ function App() {
                     <Route exact path="/">
                         <Home/>
                         <div className={"Buttonfun"}>
-                            {/* interne link ginge auch : ./About.js*/}
-                            <Button onClick={() => {window.location="https://www.google.de"} } variant="contained" color="primary" disableElevation>
+                            {/*statt der interne link ginge auch : https://www.google.de*/}
+                            <Button onClick={() => {window.location="./About.js"} } variant="contained" color="primary" disableElevation>
                                 and send
                             </Button>
                         </div>
@@ -52,6 +54,5 @@ function App() {
         </>
     );
 }
-
 
 export default App;
